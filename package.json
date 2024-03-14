@@ -1,0 +1,20 @@
+{
+  "name": "ankit",
+  "version": "0.1.0",
+  "description": "A simple TypeScript library of utils for anki",
+  "keywords": [
+    "anki",
+    "ankit"
+  ],
+  "homepage": "https://github.com/epilurzu/ankit#readme",
+  "license": "MIT",
+  "author": "Enrico Podda @epilurzu",
+
+  "scripts": {
+    "dev": "ts-node main.ts"
+  },
+  "devDependencies": {
+    "ts-node": "^10.9.2",
+    "typescript": "^5.4.2"
+  }
+}
