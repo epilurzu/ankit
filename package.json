@@ -6,12 +6,21 @@
     "anki",
     "ankkit"
   ],
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/epilurzu/ankkit.git"
+  },
   "homepage": "https://github.com/epilurzu/ankkit#readme",
   "license": "MIT",
   "author": "Enrico Podda @epilurzu",
+  "main": "dist/csj/index.js",
+  "module": "dist/esm/index.js",
 
   "scripts": {
-    "dev": "ts-node main.ts"
+    "dev": "ts-node index.ts",
+    "build": "rm -rf dist/ && npm run build:esm && npm run build:cjs",
+    "build:cjs": "tsc --module CommonJs --outDir dist/cjs",
+    "build:esm": "tsc"
   },
   "devDependencies": {
     "ts-node": "^10.9.2",
