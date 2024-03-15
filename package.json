@@ -1,6 +1,6 @@
 {
   "name": "ankkit",
-  "version": "0.1.0",
+  "version": "0.2.0",
   "description": "A simple TypeScript library of utils for anki",
   "keywords": [
     "anki",
@@ -15,7 +15,6 @@
   "author": "Enrico Podda @epilurzu",
   "main": "dist/csj/index.js",
   "module": "dist/esm/index.js",
-
   "scripts": {
     "dev": "ts-node index.ts",
     "build": "rm -rf dist/ && npm run build:esm && npm run build:cjs",
