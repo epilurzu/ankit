@@ -14,13 +14,14 @@
   "license": "MIT",
   "author": "Enrico Podda @epilurzu",
   "type": "module",
-  "main": "dist/csj/index.js",
-  "module": "dist/esm/index.js",
+  "main": "./dist/csj/index.js",
+  "module": "./dist/esm/index.js",
+  "types": "./dist/types/index.d.ts",
   "scripts": {
     "dev": "ts-node index.ts",
-    "build": "rm -rf dist/ && npm run build:esm && npm run build:cjs",
-    "build:cjs": "tsc --module commonjs --outDir dist/cjs",
-    "build:esm": "tsc --module es2020 --outDir dist/esm"
+    "build": "rm -rf ./dist/ && npm run build:esm && npm run build:cjs",
+    "build:cjs": "tsc --module commonjs --outDir ./dist/cjs",
+    "build:esm": "tsc --module es2020 --outDir ./dist/esm"
   },
   "devDependencies": {
     "ts-node": "^10.9.2",
