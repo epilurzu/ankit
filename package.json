@@ -13,6 +13,7 @@
   "homepage": "https://github.com/epilurzu/ankkit#readme",
   "license": "MIT",
   "author": "Enrico Podda @epilurzu",
+  "type": "module",
   "main": "dist/csj/index.js",
   "module": "dist/esm/index.js",
   "scripts": {
