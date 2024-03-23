@@ -15,6 +15,6 @@ function createDeck(jsonDeck: JsonDeck): string {
     return deck;
 }
 
-module.exports = {
+export {
     createDeck
 }
