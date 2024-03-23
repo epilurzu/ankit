@@ -1,4 +1,3 @@
-"use strict";
 function createDeck(jsonDeck) {
     var deck = '#separator:tab';
     deck += '\n#html:false';
@@ -7,6 +6,4 @@ function createDeck(jsonDeck) {
     });
     return deck;
 }
-module.exports = {
-    createDeck: createDeck
-};
+export { createDeck };
