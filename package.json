@@ -19,8 +19,8 @@
   "scripts": {
     "dev": "ts-node index.ts",
     "build": "rm -rf dist/ && npm run build:esm && npm run build:cjs",
-    "build:cjs": "tsc --module CommonJs --outDir dist/cjs",
-    "build:esm": "tsc"
+    "build:cjs": "tsc --module commonjs --outDir dist/cjs",
+    "build:esm": "tsc --module es2020 --outDir dist/esm"
   },
   "devDependencies": {
     "ts-node": "^10.9.2",
